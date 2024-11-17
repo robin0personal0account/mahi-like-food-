@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahi's Favorite Foods 🍰</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdf2f8;
+            color: #444;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: #ff6b6b;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .intro-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .intro-container img {
+            max-width: 100%;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .intro-text {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .food-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .food-card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+            width: 250px;
+            text-align: center;
+        }
+
+        .food-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .food-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .food-name {
+            padding: 15px;
+            font-weight: bold;
+            color: #ff6b6b;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .food-gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <h1>Mahi's Favorite Foods 🍰</h1>
+
+    <!-- Intro Section with Cute Kitty Image -->
+    <div class="intro-container">
+        <img src="https://i.pinimg.com/originals/2c/79/61/2c7961c06a0d0ad5e97b6e7939a82e75.gif" alt="Cute Kitty" />
+        <p class="intro-text">Hey Mahi! Here's a collection of your favorite foods to brighten your day! 😸💖</p>
+    </div>
+
+    <!-- Food Gallery Section -->
+    <div class="food-gallery">
+
+        <!-- Food Cards -->
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/9a/d6/79/9ad6791a0a4d4250b76239794c475fb5.jpg" class="food-image" alt="Pizza">
+            <div class="food-name">masala chai and samosa </div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/05/34/24/053424c28df9802836eea0a40c3a33f7.jpg" class="food-image" alt="Burger">
+            <div class="food-name">pani puri</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/22/5a/b1/225ab11ca0166233a04236434a1729bb.jpg" class="food-image" alt="Sushi">
+            <div class="food-name">kulfi</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/4b/59/ba/4b59ba323062214007f38a29bfc21069.jpg" class="food-image" alt="Pasta">
+            <div class="food-name">rabdi</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/b8/8f/1b/b88f1b3d907cdd566c64637de84dd9e4.jpg" class="food-image" alt="Ice Cream">
+            <div class="food-name">maggie </div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/236x/7d/52/8a/7d528a525055066c97b0cd642d989cbd.jpg" class="food-image" alt="Cake">
+            <div class="food-name">Burger 🍔🍔</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/c6/4f/ce/c64fced33ea9309aff17d920274d60d0.jpg" class="food-image" alt="Cake">
+            <div class="food-name">fortune cookies</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/e3/02/a7/e302a7a5e09fd89ba7d995a2157cb149.jpg" class="food-image" alt="Cake">
+            <div class="food-name">watermelon</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/21/20/dd/2120dd948e3c7585bf0d81b9f68b549e.jpg" class="food-image" alt="Cake">
+            <div class="food-name">butter</div>
+        </div>
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/a2/42/b8/a242b8a95e1127e8e6756081358bf19c.jpg" class="food-image" alt="Cake">
+            <div class="food-name">donut</div>
+        </div>
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/00/f0/6a/00f06ae76e289d43e6eaf0cd48637b81.jpg" class="food-image" alt="Cake">
+            <div class="food-name">butter</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/e3/d8/ff/e3d8ff5eaf8611c1a5238a4c11782fc6.jpg" class="food-image" alt="Cake">
+            <div class="food-name">chole bhature</div>
+        </div>
+        
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/03/69/4b/03694be3ed0476e5431fdc082126d58e.jpg" class="food-image" alt="Cake">
+            <div class="food-name">gola</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/11/e4/c1/11e4c1e597839c697d3f7e1196b55b3b.jpg" class="food-image" alt="Cake">
+            <div class="food-name">Jalebi</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/ca/2a/5c/ca2a5c2e5856357ba03b5e97212fb0be.jpg" class="food-image" alt="Cake">
+            <div class="food-name">shawarma</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/09/a0/23/09a0236df05f031d3738f6c4937824df.jpg" class="food-image" alt="French Fries">
+            <div class="food-name">French Fries</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/1e/1a/95/1e1a95b69a9b6d4232bc7101750eebb9.jpg" class="food-image" alt="Idli">
+            <div class="food-name">Idli</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/25/9d/6b/259d6b6babc49c3055bf4a115ac14a7d.jpg" class="food-image" alt="Masala Dosa">
+            <div class="food-name">Masala Dosa</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/d9/f9/53/d9f953e88a7b1023be7ec1318283c588.jpg" class="food-image" alt="Cookies">
+            <div class="food-name">Cookies</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/13/7a/89/137a89e9e83c1ecf59121acfcf7b2c77.jpg" class="food-image" alt="Cupcakes">
+            <div class="food-name">Cupcakes</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/b8/9e/b0/b89eb0776b0f81dcbb7492a678cae5e0.jpg" class="food-image" alt="Doritos">
+            <div class="food-name">Doritos</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/f5/30/cc/f530ccf07fd0e5310f1305689b55f53c.jpg" class="food-image" alt="Cheetos">
+            <div class="food-name">Cheetos</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/5e/43/e2/5e43e2efe9f21620796896965bb9aad5.jpg" class="food-image" alt="Oreo">
+            <div class="food-name">Oreo</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/86/07/30/8607309771f5125d7d17e99b0a85f99f.jpg" class="food-image" alt="Pizza Princess">
+            <div class="food-name">Pizza Princess</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/33/da/a2/33daa278e6058c0288bc613bbb21a921.jpg" class="food-image" alt="Mango">
+            <div class="food-name">Mango</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/6a/e9/dc/6ae9dca878e0529e587c3995430ae76b.jpg" class="food-image" alt="Sandwich">
+            <div class="food-name">Sandwich</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/09/fb/3a/09fb3aa8d0d68376ec909cdbfc37ab0f.jpg" class="food-image" alt="Spicy Popcorn">
+            <div class="food-name">Popcorn (Spicy)</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/64/58/76/6458765492afb4d81a940108edbd319d.jpg" class="food-image" alt="Nuts and Seeds">
+            <div class="food-name">Nuts and Seeds</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/af/c6/30/afc630163a06b11cf19ac31b1c34ba42.jpg" class="food-image" alt="Dhokla">
+            <div class="food-name">Dhokla</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/26/a9/81/26a98118ef1ab9c7755dc0eb5c778c99.jpg" class="food-image" alt="Juice">
+            <div class="food-name">Juice</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/13/50/97/135097a4a74fa04d330dd1c885ad83ce.jpg" class="food-image" alt="Cake">
+            <div class="food-name">STRAWBERRY</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/80/83/c9/8083c9446ccec4ec6b504c107e443c5c.jpg" class="food-image" alt="Cake">
+            <div class="food-name">APPLE</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/dc/7b/0e/dc7b0e1f31fac57daebfff5a9ebe0f87.jpg" class="food-image" alt="Cake">
+            <div class="food-name">chocolate</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/b6/e7/28/b6e7282a16d5bbe4a4fabc687bd9fd19.jpg" class="food-image" alt="Cake">
+            <div class="food-name">special ice cream </div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/63/a6/0f/63a60fbbdd0e25bfe1c3d316c5c8eb70.jpg" class="food-image" alt="Cake">
+            <div class="food-name">egg</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/57/87/78/578778af04ddf0641d5356e170e94082.jpg" class="food-image" alt="Cake">
+            <div class="food-name">bornvita</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/1e/f8/98/1ef8984483bf47bce7b54c2767005346.jpg" class="food-image" alt="Cake">
+            <div class="food-name">pineapple </div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/d4/7a/90/d47a90a9563cb5b237ace5db62791b30.jpg" class="food-image" alt="Cake">
+            <div class="food-name">banana</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/60/e3/4b/60e34b23a1e82ef65bdc39beadb653dc.jpg" class="food-image" alt="Cake">
+            <div class="food-name">kinder joy</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/5c/81/20/5c81207e64862e0a28aa1c5fc144e010.jpg" class="food-image" alt="Cake">
+            <div class="food-name">candy</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/de/ab/55/deab556689207923d3ee98cc07beb281.jpg" class="food-image" alt="Cake">
+            <div class="food-name">palada payasam</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/5e/f9/2c/5ef92c46544eb81386eebf97df134c7a.jpg" class="food-image" alt="Cake">
+            <div class="food-name">semiya payasam</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/7f/f9/1d/7ff91d62b26999c5f338934af4a7899c.jpg" class="food-image" alt="Cake">
+            <div class="food-name">ari paysam</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/5f/74/79/5f747952433517cbd71c403201c9c91a.jpg" class="food-image" alt="Cake">
+            <div class="food-name">ada pradhaman</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/14/10/a1/1410a1cbc64830f754c39faf4d53d0b9.jpg" class="food-image" alt="Cake">
+            <div class="food-name">nendra banana chips</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/7d/e3/a1/7de3a1b601e2f102ed06e6837e83049c.jpg" class="food-image" alt="Cake">
+            <div class="food-name">putt kadala</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/63/50/9e/63509ed57ddbbdf50eba6b68d4030c5e.jpg" class="food-image" alt="Cake">
+            <div class="food-name">oats</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/21/c3/50/21c350a8b95e27c2730f8dc4cc06b3be.jpg" class="food-image" alt="Cake">
+            <div class="food-name">butter chicken</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/3f/9b/ff/3f9bff08d03bc4b626b74e3d44178df4.jpg" class="food-image" alt="Cake">
+            <div class="food-name">Masala Khichdi </div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/dc/29/2c/dc292c6dcb9eea7bc830e13f8daaf4f2.jpg" class="food-image" alt="Cake">
+            <div class="food-name">rice</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/5c/f5/f9/5cf5f93917613634dbd78e67ec70f572.jpg" class="food-image" alt="Cake">
+            <div class="food-name">Crispy Korean Chicken Wings</div>
+        </div>
+
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/12/39/3f/12393f8ce14643c700760be5597a9d19.jpg" class="food-image" alt="Cake">
+            <div class="food-name">Gujarati Thali </div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/c6/f5/84/c6f584927e88503bbd53feca76e9fcb7.jpg" class="food-image" alt="Cake">
+            <div class="food-name"> upma</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/ca/1d/f1/ca1df124a0758e4926dbf01e651c2e37.jpg" class="food-image" alt="Cake">
+            <div class="food-name">Paneer Ki Sabji</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/5b/47/c9/5b47c93f1ca8e76d53f720ae1472950c.jpg" class="food-image" alt="Cake">
+            <div class="food-name">https://i.pinimg.com/736x/5b/47/c9/5b47c93f1ca8e76d53f720ae1472950c.jpg</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/5b/47/c9/5b47c93f1ca8e76d53f720ae1472950c.jpg" class="food-image" alt="Cake">
+            <div class="food-name">Dal Chawal</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/9c/b4/7b/9cb47b71924bb932a45d2b2e5d311117.jpg" class="food-image" alt="Cake">
+            <div class="food-name">Jeera Aloo</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/b3/47/6c/b3476c21bc6414daadc2a79089ef23d0.jpg" class="food-image" alt="Cake">
+            <div class="food-name">sookhi Sabji</div>
+        </div>
+
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/79/e7/5e/79e75ecc2adedf085c3e63a969d4f5a3.jpg" class="food-image" alt="Cake">
+            <div class="food-name">Rasmalai</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/5f/ce/16/5fce161cb49886546503fdba6563516a.jpg" class="food-image" alt="Cake">
+            <div class="food-name">Ragda </div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/27/88/89/278889bf329e42c5b229a084bad0d41b.jpg" class="food-image" alt="Cake">
+            <div class="food-name">Aloo Pakoda</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/42/58/ec/4258ec0d5e752715f753940655e92130.jpg" class="food-image" alt="Cake">
+            <div class="food-name">salad</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/80/ad/7e/80ad7e55ec0a63b1a5f7e851816afb3e.jpg" class="food-image" alt="Cake">
+            <div class="food-name">Kurkure</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/e9/70/a1/e970a1825c54be8b34bb73f159f38e07.jpg" class="food-image" alt="Cake">
+            <div class="food-name">choco </div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/f9/b2/b2/f9b2b29e0a20f98c608b152661dc9857.jpg" class="food-image" alt="Cake">
+            <div class="food-name">Veg Biryani</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/eb/b2/f3/ebb2f3c743761f7054d0556853db382b.jpg" class="food-image" alt="Cake">
+            <div class="food-name">Milk Barfi</div>
+        </div>
+
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/22/8c/6c/228c6cdac6c958e58fd4726d16054660.jpg" class="food-image" alt="Cake">
+            <div class="food-name">snacks</div>
+        </div>
+
+
+       
+
+        
+        <div class="food-card">
+            <img src=" https://i.pinimg.com/736x/cc/2e/8e/cc2e8e3ec3894f7abe04b08d84740069.jpg" class="food-image" alt="Salad">
+            <div class="food-name">snacks</div>
+        </div>
+        
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/36/44/8d/36448d4e6c0a949ed58661b12bf29ce5.jpg" class="food-image" alt="Salad">
+            <div class="food-name">want to try ? </div>
+        </div>
+        <div class="food-card">
+            <img src="https://i.pinimg.com/736x/1b/da/ca/1bdaca54b40441bc8a1bccc733e3ca43.jpg" class="food-image" alt="Salad">
+            <div class="food-name">SAMOSA</div>
+        </div>
+        
+        
+
+        <!-- Add 24 more food cards by simply duplicating the above structure and changing the image URL and name -->
+        <!-- Use placeholder URLs or Mahi's favorite dishes -->
+    </div>
+
+    <!-- Footer Section -->
+    <footer>Made with love for Mahi 💕</footer>
+
+</body>
+
+</html>
